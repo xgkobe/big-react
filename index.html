@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Persion(name) {
+            this.name = name;
+            // return {};
+        }
+        function $New (name) {
+            const newObject = {};
+            newObject.__proto__ = Persion.prototype;
+            let a = Persion.bind(newObject)(name);
+            if (typeof a === 'object') {
+                return a;
+            }
+            return newObject;
+        }
+        console.log(new Persion('1'));
+        console.log($New('1'));
+    </script>
+</body>
+</html>
