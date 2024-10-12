@@ -19,6 +19,7 @@
     "husky": "^9.1.6",
     "js,": "link:@eslint/js,",
     "prettier": "^3.3.3",
+    "rollup": "^4.24.0",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.8.1"
   }
